@@ -1,33 +1,34 @@
-# 📊 Datasets Considered for AI vs Real Image Detection
+# Datasets Considered for AI vs Real Image Detection
 
-## ✅ Selected: DRAGON (CVPR 2025)
+## Selected: DRAGON (CVPR 2025)
 - **Name**: DRAGON (Detecting Real and AI-Generated cONtent)
 - **Published**: CVPR 2025
-- **Content**: 20+ image generators (including SD 2.0, DALL-E 2, Midjourney)
+- **Content**: 25 diffusion based image generators (including SD 1.5/2.1, Stable Cascade)
 - **Use Case**: General-purpose forensic detection, image-level benchmarking
-- **Why Chosen**: Balanced, diverse, includes high-res Stable Diffusion 2.0 images
 
-[🔗 Official GitHub Link](https://github.com/NVlabs/DRAGON)
+[🔗 Official Hugging Face Link](https://huggingface.co/datasets/lesc-unifi/dragon)
+[🔗 Paper](https://arxiv.org/pdf/2505.11257)
 
 ---
 
-## 🕐 Datasets Reviewed (Not Used Due to Time Constraints)
+## Other datasets
 
-### 🟡 DiffusionDB
-- Pros: Real user prompts, raw SD samples, 14M images
-- Cons: Large (TB-scale), inconsistent formatting
+### DiffusionDB
+🔗 [Hugging Face](https://huggingface.co/datasets/poloclub/diffusiondb)
 
-### 🟡 LAION/AI-generated-images (HuggingFace)
-- Pros: Easy access via `datasets`, metadata includes generator
-- Cons: URL reliability and label noise in large-scale version
+### LAION/AI-generated-images (HuggingFace)
+🔗 [ReLAION2B](https://huggingface.co/datasets/laion/relaion2B-en-research)
+🔗 [ReLAION1D](https://huggingface.co/datasets/laion/relaion1B-nolang-research)
+🔗 [LAION400M](https://huggingface.co/datasets/laion/laion400m)
+🔗 [LAION-ART](https://huggingface.co/datasets/laion/laion-art)
+🔗 [LAION-COCO](https://huggingface.co/datasets/laion/laion-coco)
+🔗 [LAION-POP](https://huggingface.co/datasets/laion/laion-pop)
+🔗 [LAION-HIGH-RESOLUTION](https://huggingface.co/datasets/laion/laion-high-resolution)
+🔗 [AESTHETICS_v2.4.75](https://huggingface.co/datasets/laion/aesthetics_v2_4.75)
 
-### 🟡 GenImage
-- Pros: Multiple generative models including SD, BigGAN, StyleGAN3
-- Cons: Smaller size; better for controlled experiments
+### Stable Diffusion 100k Custom Prompts and Images
+🔗 [Kaggle](https://www.kaggle.com/datasets/rturley/stable-diffusion-100k-custom-prompts-and-images/data)
 
-### 🟡 DiffusionFace
-- Pros: Focused on faces; well-labeled
-- Cons: Too narrow for general image detection
 
 ---
 

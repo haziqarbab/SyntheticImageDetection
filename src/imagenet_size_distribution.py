@@ -4,9 +4,30 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 import numpy as np
 from collections import Counter
+import pandas as pd
 
 # Path to your ImageNet val images
-imagenet_dir = 'data/real'  # <-- UPDATE THIS
+imagenet_dir = './data/real'  # <-- UPDATE THIS
+
+# Path to your metadata CSV
+csv_path = "./data/fake/fake_metadata.csv"
+
+# Load the CSV
+df = pd.read_csv(csv_path)
+
+# Group and count by model
+model_counts = df['model'].value_counts().sort_values(ascending=False)
+
+# Display the result
+print("Image count by generation model:\n")
+print(model_counts)
+
+model_counts.plot(kind='bar', figsize=(12, 5), title="Image Count by Generation Model")
+plt.xlabel("Model")
+plt.ylabel("Number of Images")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
 
 widths = []
 heights = []
