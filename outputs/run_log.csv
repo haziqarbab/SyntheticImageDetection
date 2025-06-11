@@ -1,6 +1,6 @@
 run_time,log_name,model,features,total_images,test_size,target_size,output_dir,log_scaling,selected_gen_models
-2025-06-11T23:31:07.133571,ensemble_20250611_232848,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",25000,0.4,512,outputs/ensemble_20250611_232848,False,
-2025-06-11T23:31:20.744066,ensemble_20250611_233118,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",25000,0.4,512,outputs/ensemble_20250611_233118,False,['SD_2.1']
-2025-06-11T23:31:25.707907,ensemble_20250611_233123,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",25000,0.4,512,outputs/ensemble_20250611_233123,False,['SD_3']
-2025-06-11T23:31:43.849796,ensemble_20250611_233141,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",25000,0.4,512,outputs/ensemble_20250611_233141,False,['SD_1.5']
-2025-06-11T23:32:06.757678,ensemble_20250611_233204,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",25000,0.4,512,outputs/ensemble_20250611_233204,False,['SSD_1B']
+2025-06-11T23:36:03.639393,ensemble_20250611_233601,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",1000,0.4,512,outputs/ensemble_20250611_233601,False,['SSD_1B']
+2025-06-11T23:36:50.302663,ensemble_20250611_233648,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",1000,0.4,512,outputs/ensemble_20250611_233648,False,['SD_3']
+2025-06-11T23:36:56.094995,ensemble_20250611_233654,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",1000,0.4,512,outputs/ensemble_20250611_233654,False,['SD_2.1']
+2025-06-11T23:37:01.715740,ensemble_20250611_233659,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",1000,0.4,512,outputs/ensemble_20250611_233659,False,['SD_1.5']
+2025-06-11T23:39:24.591544,ensemble_20250611_233705,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",25000,0.4,512,outputs/ensemble_20250611_233705,False,

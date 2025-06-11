@@ -20,7 +20,7 @@ def run_pipeline(args):
 
     # Extract features
     print("[INFO] Extracting features...")
-    df = extract_dataset_features(
+    df, num_images = extract_dataset_features(
          args.real_dir,
          args.fake_dir,
          args.features,
@@ -43,6 +43,8 @@ def run_pipeline(args):
     y_pred, y_true = evaluate_model(
         df, model_type=args.model, model_dir=os.path.join(args.output_dir, "models"), result_dir=os.path.join(args.output_dir, "results")
     )
+
+    return num_images
 
 # --------------------------- Argument Parsing ---------------------------
 if __name__ == "__main__":
@@ -70,7 +72,7 @@ if __name__ == "__main__":
     output_subdir = os.path.join(args.output_dir, run_name)
     args.output_dir = output_subdir
 
-    run_pipeline(args)
+    images_used = run_pipeline(args)
 
     # Store config + metrics
     log_entry = {
@@ -78,7 +80,7 @@ if __name__ == "__main__":
         "log_name": run_name,
         "model": args.model,
         "features": args.features,
-        "total_images": args.total_images,
+        "total_images": images_used,
         "test_size": args.test_size,
         "target_size": args.target_size,
         "output_dir": output_subdir,

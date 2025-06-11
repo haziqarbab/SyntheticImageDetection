@@ -93,4 +93,4 @@ def extract_dataset_features(real_dir,
             except Exception as e:
                 print(f"[ERROR] {fname}: {e}")
 
-    return pd.DataFrame(rows)
+    return pd.DataFrame(rows), len(fake_files)
