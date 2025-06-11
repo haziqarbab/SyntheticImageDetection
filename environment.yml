@@ -1,0 +1,24 @@
+name: ai_image_detection
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scikit-learn
+  - scikit-image
+  - matplotlib
+  - seaborn
+  - tqdm
+  - pillow
+  - requests
+  - pip
+  - pip:
+      - datasets  # HuggingFace datasets
+      - torchvision
+      - torch
+      - opencv-python
+      - lightgbm
+      - jupyter
