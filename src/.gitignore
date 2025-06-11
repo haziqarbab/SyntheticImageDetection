@@ -1,0 +1,3 @@
+# Ignore cached features
+cache/
+__pycache__/
