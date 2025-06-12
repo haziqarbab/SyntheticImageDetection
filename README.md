@@ -1,10 +1,10 @@
-# 🧠 AI vs Real Image Detection
+# AI vs Real Image Detection
 
 This project provides a modular, feature-based pipeline to distinguish AI-generated images from real photographs using classical machine learning techniques. It supports flexible feature extraction, training multiple models (including ensembles), streaming support for large datasets (e.g. DRAGON), and detailed logging for analysis and reproducibility.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -37,7 +37,7 @@ This project provides a modular, feature-based pipeline to distinguish AI-genera
 
 ---
 
-## 🔧 Environment Setup
+## Environment Setup
 
 To set up the project environment:
 
@@ -49,7 +49,7 @@ This file installs required packages via both conda and pip.
 
 ---
 
-## 🗂️ Dataset Setup
+## Dataset Setup
 This project uses a mix of real and AI-generated images:
 
 - Real images are sourced from the ImageNet 2012 validation set.
@@ -61,7 +61,7 @@ To download and prepare these datasets automatically:
 ```bash
 python src/download_data.py
 ```
-### 🔧 Configuration
+### Configuration
 To control which data is downloaded and how it's stored, modify the variables at the top of src/download_data.py:
 
 ```python
@@ -79,7 +79,7 @@ The script performs the following:
 - Metadata (model name + ImageNet class) to data/fake/fake_metadata.csv
 
 
-### 🧪 For Limited Storage Environments
+### For Limited Storage Environments
 If you're constrained by disk space (e.g., working with the Large or ExtraLarge subsets of DRAGON), use the streaming-based feature extraction script instead. This allows you to extract features on-the-fly without storing full images or using the cache.
 
 ```bash
@@ -107,11 +107,11 @@ You can also optionally limit the number of streamed images by using --limit.
 
 ---
 
-## 🚀 Running Experiments
+## Running Experiments
 
 Use `run_experiments.py` to extract features, train a classifier, and evaluate performance on real vs. generated images.
 
-### 🧪 Basic Example
+### Basic Example
 
 ```bash
 python run_experiments.py \
@@ -126,7 +126,7 @@ python run_experiments.py \
     --test_size 0.3
 ```
 
-### 🔧 Key Arguments
+### Key Arguments
 
 | Flag              | Description                                                                 |
 |-------------------|-----------------------------------------------------------------------------|
@@ -142,7 +142,7 @@ python run_experiments.py \
 | `--no_scaling`    | If set, disables feature scaling before training                            |
 | `--gen_models`    | (Optional) List of generative model names to filter fake images             |
 | `--metadata_csv`  | Path to fake image metadata CSV (default: `data/fake/fake_metadata.csv`)    |
-### 🤖 Using a Subset of Generative Models
+### Using a Subset of Generative Models
 
 You can selectively train and evaluate models on a specific subset of diffusion models. This is useful for analyzing generalization, robustness, or focusing on specific generation styles.
 
@@ -170,30 +170,30 @@ python run_experiments.py \
 ``` 
 ---
 
-## 📊 Results and Logging
+## Results and Logging
 
 After running an experiment, all results are saved inside the `outputs/` directory under a timestamped subdirectory. Each experiment logs the following:
 
-- 📈 **ROC Curve**  
+- **ROC Curve**  
   `outputs/RESULT_DIR/results/roc_curve.png`
 
-- 🔢 **Confusion Matrix**  
+- **Confusion Matrix**  
   `outputs/RESULT_DIR/results/confusion_matrix.png`
 
-- 🧾 **Classification Report (all runs)**  
+- **Classification Report (all runs)**  
   `outputs/run_log.csv`
 
-- ⚙️ **Experiment Configuration**  
+- **Experiment Configuration**  
   `outputs/RESULT_DIR/models/features_used.json`
 
-- 🧠 **Trained Model and Scaler**  
+- **Trained Model and Scaler**  
   `outputs/RESULT_DIR/models/*.pkl`
 
-- 📂 **Train/Test Split Information**  
+- **Train/Test Split Information**  
   `outputs/RESULT_DIR/models/split_info.csv`
 
 
-## 📈 Results
+## Results
 
 The results below were obtained using the **ensemble classifier** trained on **5 selected features** from the **Regular subset** of DRAGON.  
 We used **25,000 real** ImageNet validation images and **25,000 generated** images, with a **5% training / 95% testing split**.
@@ -205,7 +205,7 @@ We used **25,000 real** ImageNet validation images and **25,000 generated** imag
 
 More results and their details are available in the /outputs directory. 
 
-## 🧠 Supported Models
+## Supported Models
 
 | Model     | Description                                 |
 |-----------|---------------------------------------------|
@@ -218,7 +218,7 @@ More results and their details are available in the /outputs directory.
 
 Use --model to choose.
 
-## 🧬 Supported Features
+## Supported Features
 You can mix and match features like:
 
 - `fft_alpha`: FFT power spectrum decay — estimates how quickly frequency components decay, capturing global image structure.
