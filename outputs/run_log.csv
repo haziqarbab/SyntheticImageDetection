@@ -4,3 +4,4 @@ run_time,log_name,model,features,total_images,test_size,target_size,output_dir,l
 2025-06-11T23:36:56.094995,ensemble_20250611_233654,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",1000,0.4,512,outputs/ensemble_20250611_233654,False,['SD_2.1']
 2025-06-11T23:37:01.715740,ensemble_20250611_233659,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",1000,0.4,512,outputs/ensemble_20250611_233659,False,['SD_1.5']
 2025-06-11T23:39:24.591544,ensemble_20250611_233705,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",25000,0.4,512,outputs/ensemble_20250611_233705,False,
+2025-06-11T23:43:07.979093,ensemble_20250611_234213,ensemble,"['fft_alpha', 'corner_energy', 'circular_power_ratio', 'fft_horz', 'fft_vert']",25000,0.95,512,outputs/ensemble_20250611_234213,False,
