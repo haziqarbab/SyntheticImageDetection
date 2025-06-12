@@ -221,12 +221,12 @@ Use --model to choose.
 ## Supported Features
 You can mix and match features like:
 
-- `fft_alpha`: FFT power spectrum decay — estimates how quickly frequency components decay, capturing global image structure.
-- `fft_horz`, `fft_vert`: Directional FFT energy — measures horizontal and vertical frequency strength to capture structural alignment.
-- `spectral_corner_energy`: Harris corner strength — captures proportion of energy concentrated in the corners of the frequency spectrum.
-- `circular_power_ratio`: Radial vs tangential frequency energy — measures isotropy of frequency content.
-- `fractal_dimension`: Image complexity — quantifies texture irregularity and self-similarity using a box-counting approximation.
-- `dct_entropy`: Entropy of DCT coefficients — reflects information content and compression artifacts in discrete cosine transform space.
-- `phase_coherence`: Phase consistency of FFT components — high coherence implies structured, natural image-like patterns.
-- `principal_directional_energy`: Energy aligned with dominant gradient directions — captures geometric regularity or symmetry.
-- `noise_residual_features`: Statistical features from denoised–original residual — captures noise patterns typical of synthetic generation artifacts.
+- `fft_alpha`: FFT power spectrum decay - estimates how quickly frequency components decay, capturing global image structure.
+- `fft_horz`, `fft_vert`: Directional FFT energy - measures horizontal and vertical frequency strength to capture structural alignment.
+- `spectral_corner_energy`: Harris corner strength - captures proportion of energy concentrated in the corners of the frequency spectrum.
+- `circular_power_ratio`: Radial vs tangential frequency energy - measures isotropy of frequency content.
+- `fractal_dimension`: Image complexity - quantifies texture irregularity and self-similarity using a box-counting approximation.
+- `dct_entropy`: Entropy of DCT coefficients - reflects information content and compression artifacts in discrete cosine transform space.
+- `phase_coherence`: Phase consistency of FFT components - high coherence implies structured, natural image-like patterns.
+- `principal_directional_energy`: Energy aligned with dominant gradient directions - captures geometric regularity or symmetry.
+- `noise_residual_features`: Statistical features from denoised–original residual - captures noise patterns typical of synthetic generation artifacts.
