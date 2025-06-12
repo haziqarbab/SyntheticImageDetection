@@ -1,6 +1,6 @@
 # AI vs Real Image Detection
 
-This project provides a modular, feature-based pipeline to distinguish AI-generated images from real photographs using classical machine learning techniques. It supports flexible feature extraction, training multiple models (including ensembles), streaming support for large datasets (e.g. DRAGON), and detailed logging for analysis and reproducibility.
+This project provides a modular, feature-based pipeline to distinguish AI-generated images from real photographs using classical machine learning techniques. It supports flexible feature extraction, training multiple models (including ensembles), streaming support for the DRAGON dataset, and detailed logging for analysis and reproducibility.
 
 ---
 
