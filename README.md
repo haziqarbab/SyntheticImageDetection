@@ -6,6 +6,7 @@ This project provides a modular, feature-based pipeline to distinguish AI-genera
 
 ## 📁 Project Structure
 
+```
 .
 ├── data/                     # Real and fake image datasets (not pushed to GitHub)
 │   ├── real/                # Folder containing real images
@@ -31,6 +32,8 @@ This project provides a modular, feature-based pipeline to distinguish AI-genera
 ├── run_experiments.py        # Command-line pipeline runner
 ├── environment.yml           # Conda environment definition
 └── README.md                 # This file
+```
+
 
 ---
 
